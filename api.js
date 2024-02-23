@@ -25,8 +25,24 @@ PLANETARYEVENT object: contains information about a calculated notable alignment
 
 
 */
-import Month from './Classes/Month.js'
+import Month from "./Classes/Month.js"
+import express from "express"
 
+var app = express();
 var monthObject = new Month();
 
-console.log(monthObject.returnMonth(1));
+app.get("/month", (req, res, next) => {
+ console.log(monthObject.returnMonth(req.query.monthNumber));
+ res.send(monthObject.returnMonth(req.query.monthNumber));
+});
+
+
+
+
+app.listen(3000, () => {
+ console.log("Server running on port 3000");
+ console.log(monthObject.returnMonth(2));
+});
+
+
+
