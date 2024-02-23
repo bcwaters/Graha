@@ -1,0 +1,11 @@
+{
+  "name": "graha",
+  "version": "1.0.0",
+  "description": "A package for calculating vedic astrology",
+  "main": "api.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "bcwaters",
+  "license": "ISC"
+}
