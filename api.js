@@ -15,7 +15,7 @@ DAY object: A single day within the month
 
 TIMEWINDOW object: A window of time which is determined by vedic calculations
     - TIME startTime
-    - TIME endTime
+    - TIME endTimebcwaters:~/repo/MinusMail (master) $
     - boolean isFavorable
 
 PLANETARYEVENT object: contains information about a calculated notable alignment
@@ -25,5 +25,8 @@ PLANETARYEVENT object: contains information about a calculated notable alignment
 
 
 */
+import Month from './Classes/Month.js'
 
-console.log("hello world");
+var monthObject = new Month();
+
+console.log(monthObject.returnMonth(1));

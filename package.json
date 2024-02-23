@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A package for calculating vedic astrology",
   "main": "api.js",
+  "type": "module",
   "scripts": {
     "test": "test"
   },
