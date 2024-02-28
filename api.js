@@ -27,6 +27,7 @@ PLANETARYEVENT object: contains information about a calculated notable alignment
 */
 import Month from "./Classes/Month.js"
 import express from "express"
+import request from 'request'
 
 var app = express();
 var monthObject = new Month();
@@ -35,6 +36,9 @@ app.get("/month", (req, res, next) => {
  console.log(monthObject.returnMonth(req.query.monthNumber));
  res.send(monthObject.returnMonth(req.query.monthNumber));
 });
+
+
+
 
 
 
